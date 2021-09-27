@@ -47,6 +47,11 @@
   transition: $args;
 }
 
+@mixin animation($args...) {
+  animation: $args;
+  -webkit-animation: $args;
+}
+
 @mixin transform($args...) {
   transform: $args;
   -webkit-transform: $args;

@@ -166,6 +166,72 @@ section {
     }
   }
 }
+#challenge-3 {
+  .frame {
+    background-color: #272c34;
+  }
+  .circle {
+    width: 200px;
+    height: 200px;
+    @include border-radius(50%);
+    background-color: #7ddffc;
+    overflow: hidden;
+    position: relative;
+    .sun {
+      position: absolute;
+      top: 50px;
+      left: -20px;
+      width: 40px;
+      height: 40px;
+      background-color: yellow;
+      @include border-radius(50%);
+      @include animation(sun 4s infinite);
+    }
+    .sand {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 30%;
+      background-color: #f0de75;
+    }
+    .pyramid-front {
+      width: 0;
+      height: 0;
+      border-left: 60px solid transparent;
+      border-right: 25px solid transparent;
+      border-bottom: 60px solid rgb(255, 255, 255);
+      position: absolute;
+      bottom: 30%;
+      left: calc(50% - 60px);
+      z-index: 1;
+    }
+    .pyramid-back {
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 60px solid transparent;
+      border-bottom: 60px solid rgb(211, 211, 211);
+      position: absolute;
+      bottom: 30%;
+      left: calc(50% - 20px);
+      z-index: 0;
+    }
+    .shadow {
+      width: 0;
+      height: 0;
+      border-left: 60px solid transparent;
+      border-right: 60px solid transparent;
+      border-top: 40px solid rgba(73, 73, 73, 0.549);
+      position: absolute;
+      bottom: 20px;
+      left: calc(50% - 60px);
+      z-index: 0;
+    }
+  }
+
+  @keyframes sun {
+  }
+}
 
 #challenge-4 {
   .frame {
@@ -227,6 +293,97 @@ section {
     }
     100% {
       @include transform(scale(1));
+    }
+  }
+}
+
+#challenge-5 {
+  .frame {
+    background-color: #42a7a1;
+  }
+  .table {
+    width: 300px;
+    margin: 0 auto;
+    height: 250px;
+    background-color: #fff;
+    color: #949494;
+    .table-header {
+      background-color: #f1ba64;
+      height: 80px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      * {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        span {
+          color: #fff;
+          font-weight: 600;
+          text-transform: uppercase;
+          &.small {
+            font-size: 0.8rem;
+            font-weight: 400;
+            text-transform: capitalize;
+          }
+        }
+      }
+      .data-left {
+        padding-left: 20px;
+        text-align: left;
+      }
+      .data-right {
+        text-align: right;
+        padding-right: 20px;
+      }
+    }
+    .table-content {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .legend {
+        height: 42px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        font-size: 0.8rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        border-bottom: 1px solid #9494943f;
+        .views,
+        .purchases {
+          padding-right: 5px;
+          font-size: 0.7rem;
+          span {
+            display: inline-block;
+            width: 15px;
+            height: 3px;
+            background-color: red;
+            vertical-align: middle;
+          }
+        }
+        .purchases {
+          span {
+            background-color: blue;
+          }
+        }
+      }
+      .statistics {
+        height: 42px;
+        border-bottom: 1px solid #9494943f;
+      }
+      .days {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 0.8rem;
+      }
+      .polyline {
+        position: absolute;
+      }
     }
   }
 }
