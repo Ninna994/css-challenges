@@ -1,0 +1,353 @@
+@import "mixins";
+
+@import url(https://fonts.googleapis.com/css?family=Courier+Prime:regular,italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  height: 50vh;
+  position: relative;
+}
+
+// use only the available space inside the 400x400 frame
+.frame {
+  @include absolute(50%, 0, 0, 50%);
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  @include border-radius(20px);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.center {
+  @include centerer();
+}
+
+#challenge-1 {
+  .frame {
+    background-image: linear-gradient(to bottom left, #4ec6ca, #43389f);
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Courier Prime", sans-serif;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .number {
+    position: relative;
+    display: flex;
+    .one {
+      background-color: #fff;
+      height: 100px;
+      width: 25px;
+      box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+      z-index: 5;
+      position: relative;
+      @include border-radius(5px);
+      &:before {
+        content: "";
+        @include absolute($top: 0, $left: -15px);
+        @include border-radius(5px);
+        width: 100%;
+        height: 50%;
+        background-color: #fff;
+        opacity: 0.8;
+        @include transform(rotate(45deg));
+      }
+    }
+    .zero {
+      height: 100px;
+      width: 100px;
+      @include border-radius(50%);
+      border: 25px solid #fff;
+      margin-left: -5px;
+      box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+
+      &:nth-of-type(2) {
+        margin-left: -5px;
+        z-index: 3;
+      }
+    }
+  }
+  .days {
+    font-size: 5rem;
+    margin-bottom: 0;
+  }
+  .css {
+    font-size: 1.5rem;
+  }
+}
+
+#challenge-2 {
+  .frame {
+    background-color: #3faf82;
+  }
+
+  .bar {
+    width: 100px;
+    height: 10px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    @include border-radius(5px);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+    @include transition(all 0.5s ease-in out);
+
+    &.bar-1,
+    &.bar-2 {
+      margin-bottom: 15px;
+    }
+  }
+
+  .bar-container {
+    position: relative;
+    height: 60px; // 3x line height + 2x line space
+    cursor: pointer;
+
+    &.active {
+      .bar-1 {
+        animation: animate1 1s forwards;
+        -webkit-animation: animate1 1s forwards;
+      }
+      .bar-2 {
+        animation: animate2 1s forwards;
+        -webkit-animation: animate2 1s forwards;
+      }
+      .bar-3 {
+        animation: animate3 1s forwards;
+        -webkit-animation: animate3 1s forwards;
+      }
+    }
+  }
+  @keyframes animate1 {
+    0% {
+      transform: translateY(0) rotate(0);
+    }
+    50% {
+      transform: translateY(25px) rotate(0);
+    }
+
+    100% {
+      transform: translateY(25px) rotate(45deg);
+    }
+  }
+  @keyframes animate2 {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0);
+      opacity: 0;
+    }
+  }
+  @keyframes animate3 {
+    0% {
+      transform: translateY(0) rotate(0);
+    }
+    50% {
+      transform: translateY(-25px) rotate(0);
+    }
+
+    100% {
+      transform: translateY(-25px) rotate(135deg);
+    }
+  }
+}
+
+#challenge-4 {
+  .frame {
+    background-color: #e56262;
+  }
+  .circle {
+    width: 100px;
+    height: 100px;
+    @include border-radius(50%);
+    box-shadow: 0 5px 10px 0 rgba(185, 166, 166, 0.5);
+    background: #fff;
+    &.circle-main {
+      position: relative;
+      animation: circle 2s linear alternate infinite;
+      -webkit-animation: circle 2s linear alternate infinite;
+    }
+    .circle-1 {
+      @include absolute($top: 15px, $left: 15px);
+      width: 70px;
+      height: 70px;
+      animation: circle-1 2s linear alternate infinite;
+      -webkit-animation: circle-1 2s linear alternate infinite;
+    }
+    .circle-2 {
+      @include absolute($top: 35px, $left: 35px);
+      width: 30px;
+      height: 30px;
+      animation: circle-2 2s linear alternate infinite;
+      -webkit-animation: circle-2 2s linear alternate infinite;
+    }
+  }
+
+  @keyframes circle {
+    0% {
+      @include transform(scale(0));
+    }
+    100% {
+      @include transform(scale(1));
+    }
+  }
+  @keyframes circle-1 {
+    0% {
+      @include transform(scale(0));
+    }
+    33% {
+      @include transform(scale(0));
+    }
+    100% {
+      @include transform(scale(1));
+    }
+  }
+
+  @keyframes circle-2 {
+    0% {
+      @include transform(scale(0));
+    }
+    66% {
+      @include transform(scale(0));
+    }
+    100% {
+      @include transform(scale(1));
+    }
+  }
+}
+
+#challenge-6 {
+  .frame {
+    background-image: linear-gradient(to top right, #eebe6c 0%, #ca7c4e 100%);
+    font-family: "Open Sans", sans-serif;
+  }
+  .card-container {
+    width: 350px;
+    height: 350px;
+    @include border-radius(5px);
+    @include centerer();
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    color: #786450;
+    .left-section {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      padding: 0 20px;
+      justify-content: center;
+      align-items: center;
+      .profile-image {
+        width: 100px;
+        position: relative;
+        @include border-radius(50%);
+        cursor: pointer;
+        img {
+          width: 100%;
+          @include border-radius(50%);
+        }
+        &::after {
+          content: "";
+          @include absolute($top: -3px, $left: -3px);
+          width: 106px;
+          height: 106px;
+          border: 1px solid;
+          border-color: #786450 #786450 #786450 transparent;
+          @include border-radius(50%);
+          @include transform(rotate(0));
+          @include transition(all 1s);
+        }
+
+        &::before {
+          content: "";
+          @include absolute($top: -6px, $left: -6px);
+          width: 112px;
+          height: 112px;
+          border: 1px solid;
+          border-color: #786450 transparent #786450 #786450;
+          @include border-radius(50%);
+          @include transform(rotate(0));
+          @include transition(all 1s);
+        }
+
+        &:hover::after {
+          @include transform(rotate(360deg));
+        }
+        &:hover::before {
+          @include transform(rotate(-360deg));
+        }
+      }
+      .profile-description {
+        padding-top: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+        cursor: pointer;
+        p {
+          font-weight: 600;
+          &.small {
+            font-weight: 400;
+            font-size: 0.8rem;
+            text-transform: capitalize;
+          }
+        }
+      }
+      .btn {
+        width: 100%;
+        display: inline-block;
+        color: #786450;
+        border: 1px solid #786450;
+        padding: 5px 0px;
+        @include border-radius(30px);
+        text-decoration: none;
+        text-align: center;
+        margin-bottom: 10px;
+        font-weight: 500;
+        @include transition(all 0.3s ease-in);
+
+        &:hover {
+          background-color: #786450;
+          color: #fff;
+        }
+      }
+    }
+    .right-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 40%;
+      row-gap: 1px;
+      .container {
+        width: 100%;
+        height: 100%;
+        background-color: #e1cfc2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 1.2rem;
+        .description {
+          text-transform: capitalize;
+          font-size: 0.8rem;
+          font-weight: 100;
+        }
+      }
+    }
+  }
+}
