@@ -3,10 +3,31 @@
 @import url(https://fonts.googleapis.com/css?family=Courier+Prime:regular,italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 section {
   height: 50vh;
   position: relative;
+  width: 100%;
 }
+
+/* ================
+UNCOMMENT WHEN FINISHED TO MAKE GRID
+==================*/
+// .row {
+//   display: flex;
+//   flex-direction: row;
+//   position: relative;
+//   justify-content: center;
+//   width: 80%;
+//   margin-left: 10%;
+// }
 
 // use only the available space inside the 400x400 frame
 .frame {
@@ -303,10 +324,8 @@ section {
     .table-header {
       background-color: #f1ba64;
       height: 80px;
-      display: flex;
       flex-direction: row;
-      justify-content: center;
-      align-items: center;
+      @include flex-center();
       * {
         display: flex;
         flex-direction: column;
@@ -397,11 +416,9 @@ section {
     color: #786450;
     .left-section {
       width: 60%;
-      display: flex;
       flex-direction: column;
       padding: 0 20px;
-      justify-content: center;
-      align-items: center;
+      @include flex-center();
       .profile-image {
         width: 100px;
         position: relative;
@@ -486,10 +503,8 @@ section {
         width: 100%;
         height: 100%;
         background-color: #e1cfc2;
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include flex-center();
         font-weight: 600;
         font-size: 1.2rem;
         .description {
@@ -659,6 +674,121 @@ section {
       &:hover .bar-top::after {
         background-color: #fff;
       }
+    }
+  }
+}
+#challenge-9 {
+  .container {
+    width: 400px;
+    height: 400px;
+  }
+  .information {
+    background-color: #fff;
+    color: #1a2238;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    padding: 0 20px;
+    p {
+      font-size: 3rem;
+      font-weight: 300;
+    }
+    .info {
+      p {
+        font-size: 1rem;
+        font-weight: 100;
+        span {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .scene {
+    width: 100%;
+    height: calc(100% - 100px);
+    background-color: #1a2238;
+    position: relative;
+    // drop
+
+    .circle {
+      background-color: #303c5d;
+      @include border-radius(50%);
+      &.small-circle {
+        @include absolute($bottom: -100px, $left: -20px);
+        width: 200px;
+        height: 150px;
+        &:nth-child(4) {
+          @include absolute($bottom: -100px, $left: unset, $right: -80px);
+        }
+      }
+      &.big-circle {
+        @include absolute($bottom: -110px, $left: 100px);
+        width: 250px;
+        height: 200px;
+      }
+    }
+    .circle-back {
+      background-color: #26314f;
+      @include border-radius(50%);
+      @include absolute($bottom: -100px, $left: -20px);
+      width: 300px;
+      height: 200px;
+      &.circle-back--1 {
+        @include absolute($bottom: -100px, $left: unset, $right: -80px);
+      }
+    }
+
+    .moon {
+      width: 70px;
+      height: 70px;
+      @include border-radius(50%);
+      @include absolute($top: 50px, $left: 50px);
+      background-color: #f6edbd;
+      box-shadow: 0 0 15px 0 #f6edbd;
+      @include animation(moon-rise 2s ease 1);
+      .crater {
+        @include absolute($top: 40px, $left: 40px);
+        width: 15px;
+        height: 15px;
+        background-color: #ece1a8;
+        @include border-radius(50%);
+        &:after,
+        &::before {
+          content: "";
+          background-color: #ece1a8;
+          @include border-radius(50%);
+        }
+        &:after {
+          width: 80%;
+          height: 80%;
+          @include absolute($top: -20px, $left: -20px);
+        }
+        &:before {
+          width: 50%;
+          height: 50%;
+          @include absolute($top: 10px, $left: -20px);
+        }
+      }
+    }
+    .rain-small {
+      // background-color: #7fc1f9;
+      // width: 10px;
+      // height: 20px;
+      // filter: brightness(1.2);
+    }
+  }
+
+  @keyframes moon-rise {
+    0% {
+      @include transform(translate(-50px, 220px));
+    }
+    100% {
+      @include transform(translate(0, 0));
     }
   }
 }
