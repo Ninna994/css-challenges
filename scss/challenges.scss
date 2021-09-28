@@ -2,13 +2,6 @@
 
 @import url(https://fonts.googleapis.com/css?family=Courier+Prime:regular,italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
 section {
   height: 50vh;
@@ -504,6 +497,167 @@ section {
           font-size: 0.8rem;
           font-weight: 100;
         }
+      }
+    }
+  }
+}
+
+#challenge-7 {
+  .frame {
+    background-color: #264057;
+    // text color #666666
+    // text hover #5F98CD
+    // menu icon color #B2DAFF
+    // menu behind bgc #43627D
+    // menu behing color:#93B2CD
+  }
+  .container {
+    width: 300px;
+    height: 300px;
+    @include border-radius(5px);
+    overflow: hidden;
+    position: relative;
+    .menu {
+      @include border-radius(5px 0 0 5px);
+      position: absolute;
+      height: 90%;
+      top: 5%;
+      left: 50%;
+      width: 150px;
+      background-color: #43627d;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 10px;
+      @include transition(all 0.5s ease);
+      .menu-links {
+        color: #93b2cd;
+        text-decoration: none;
+        font-size: 0.8rem;
+        padding: 10px;
+        @include transition(all 0.3s ease);
+        i {
+          font-size: 0.9rem;
+          padding-right: 5px;
+        }
+        &:hover {
+          background-color: #385269;
+          color: #fff;
+        }
+      }
+    }
+    .menu-active {
+      left: 0;
+    }
+
+    .notifications {
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      @include transition(all 0.5s ease);
+      @include transform(translateX(0));
+      .notification-header {
+        width: 100%;
+        height: 60px;
+        background-color: #5f98cd;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 15px;
+        color: #fff;
+        font-weight: 600;
+        .search-icon {
+          i {
+            color: #b2daff;
+            @include transition(all 0.2s ease);
+          }
+          .search:hover i {
+            color: #fff;
+          }
+        }
+        .search-input {
+          @include border-radius(20px);
+          @include transition(all 0.5s ease);
+          border: none;
+          position: absolute;
+          height: 30px;
+          width: 0;
+          right: 50px;
+          top: 15px;
+        }
+        .show-search {
+          width: 80%;
+          padding: 5px 10px;
+        }
+      }
+      .list {
+        height: calc(100% - 60px);
+        margin-left: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-left: 2px solid #ebebeb;
+        list-style-type: none;
+        .list-item {
+          color: #666666;
+          font-size: 0.9rem;
+          cursor: pointer;
+          &::before {
+            content: "";
+            background-color: #fff;
+            border: 2px solid #5f98cd;
+            width: 12px;
+            height: 12px;
+            position: absolute;
+            left: 15px;
+            @include border-radius(50%);
+          }
+          &:hover {
+            color: #5f98cd;
+          }
+          .time {
+            font-size: 0.8rem;
+            margin-top: -5px;
+          }
+        }
+      }
+    }
+    .notification-move {
+      @include transform(translateX(150px));
+    }
+
+    .menu-toggler {
+      position: relative;
+      cursor: pointer;
+      .bar {
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        @include border-radius(2px);
+        background-color: #b2daff;
+        @include transition(all 0.2s ease);
+        &.bar-top {
+          top: -5px;
+          &:after {
+            @include absolute($right: 0px, $top: -2px);
+            content: "";
+            width: 8px;
+            height: 8px;
+            @include border-radius(50%);
+            outline: 2px solid #5f98cd;
+            background-color: #b2daff;
+            @include transition(all 0.2s ease);
+          }
+        }
+        &.bar-bottom {
+          top: 5px;
+        }
+      }
+      &:hover .bar,
+      &:hover .bar-top::after {
+        background-color: #fff;
       }
     }
   }
