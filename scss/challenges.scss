@@ -792,3 +792,77 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
     }
   }
 }
+#challenge-10 {
+  .frame {
+    background-color: #4c4c4c;
+    // watch - #242424
+    // border - 7px solid #3A3A3A;
+    // spinner - #F85B5B
+    //
+    //
+  }
+  .watch {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    background-color: #242424;
+    @include border-radius(50%);
+    border: 7px solid #3a3a3a;
+    .spinner {
+      position: absolute;
+      width: 95%;
+      height: 95%;
+      top: 2.5%;
+      left: 2.5%;
+      @include border-radius(50%);
+      border: 3px solid #f85b5b;
+      background-color: #242424;
+      // circle {
+      //   stroke: #f85b5b;
+      //   stroke-width: 3;
+      //   fill: none;
+      //   stroke-dasharray: 625;
+      //   @include animation(spinner 5s linear infinite);
+      //   transform-origin: center center;
+      //   transform: rotate(-90deg);
+      // }
+    }
+    .dots {
+      position: absolute;
+      width: 85%;
+      height: 85%;
+      top: 7.5%;
+      left: 7.5%;
+      background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%23fff' stroke-width='5' stroke-dasharray='1%25%2c 6%25' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
+      border-radius: 100px;
+    }
+    .content {
+      width: 130px;
+      height: 150px;
+      @include absolute($left: 50px, $top: 40px);
+      display: flex;
+      flex-direction: column;
+      @include flex-center();
+      color: #fff;
+      font-size: 0.9rem;
+      .time {
+        font-size: 2.2rem;
+        font-weight: 700;
+      }
+      .heart {
+        color: #f85b5b;
+        font-size: 0.9rem;
+        @include animation(beat 1s ease infinite);
+        @include transition(all 1s ease);
+      }
+    }
+  }
+  @keyframes beat {
+    0% {
+      transform: scale(1);
+    }
+    35% {
+      transform: scale(1.2);
+    }
+  }
+}

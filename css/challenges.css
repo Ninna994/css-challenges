@@ -1049,4 +1049,83 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
     -o-transform: translate(0, 0);
   }
 }
+
+#challenge-10 .frame {
+  background-color: #4c4c4c;
+}
+
+#challenge-10 .watch {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  background-color: #242424;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 7px solid #3a3a3a;
+}
+
+#challenge-10 .watch .spinner {
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  top: 2.5%;
+  left: 2.5%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 3px solid #f85b5b;
+  background-color: #242424;
+}
+
+#challenge-10 .watch .dots {
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  top: 7.5%;
+  left: 7.5%;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%23fff' stroke-width='5' stroke-dasharray='1%25%2c 6%25' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
+  border-radius: 100px;
+}
+
+#challenge-10 .watch .content {
+  width: 130px;
+  height: 150px;
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+#challenge-10 .watch .content .time {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+#challenge-10 .watch .content .heart {
+  color: #f85b5b;
+  font-size: 0.9rem;
+  animation: beat 1s ease infinite;
+  -webkit-animation: beat 1s ease infinite;
+  transition: all 1s ease;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(1.2);
+  }
+}
 /*# sourceMappingURL=challenges.css.map */
