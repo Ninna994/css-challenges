@@ -661,7 +661,7 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 #challenge-6 .card-container .right-section .container {
   width: 100%;
   height: 100%;
-  background-color: #e1cfc2;
+  background-color: #f5e8df;
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -674,6 +674,10 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   text-transform: capitalize;
   font-size: 0.8rem;
   font-weight: 100;
+}
+
+#challenge-6 .card-container .right-section .container:hover {
+  background-color: #e1cfc2;
 }
 
 #challenge-7 .frame {
@@ -884,6 +888,541 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   background-color: #fff;
 }
 
+#challenge-8 .frame {
+  background-color: #000;
+}
+
+#challenge-8 .ball {
+  background-color: #fff;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+#challenge-8 .small-ball-1 {
+  position: absolute;
+  top: 45px;
+  left: 26px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(269deg);
+  -webkit-transform: rotate(269deg);
+  -moz-transform: rotate(269deg);
+  -ms-transform: rotate(269deg);
+  -o-transform: rotate(269deg);
+}
+
+#challenge-8 .small-ball-1:after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 45px 45px;
+}
+
+#challenge-8 .small-ball-2 {
+  position: absolute;
+  top: 24px;
+  left: 12px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(27deg);
+  -webkit-transform: rotate(27deg);
+  -moz-transform: rotate(27deg);
+  -ms-transform: rotate(27deg);
+  -o-transform: rotate(27deg);
+}
+
+#challenge-8 .small-ball-2:after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 45px 45px;
+}
+
+#challenge-8 .small-ball-3 {
+  position: absolute;
+  top: 20px;
+  left: 46px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(136deg);
+  -webkit-transform: rotate(136deg);
+  -moz-transform: rotate(136deg);
+  -ms-transform: rotate(136deg);
+  -o-transform: rotate(136deg);
+}
+
+#challenge-8 .small-ball-3:after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 45px 45px;
+}
+
+#challenge-8 .small-ball-4 {
+  position: absolute;
+  top: 42px;
+  left: 13px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(293deg);
+  -webkit-transform: rotate(293deg);
+  -moz-transform: rotate(293deg);
+  -ms-transform: rotate(293deg);
+  -o-transform: rotate(293deg);
+}
+
+#challenge-8 .small-ball-4:after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 45px 45px;
+}
+
+#challenge-8 .small-ball-5 {
+  position: absolute;
+  top: 9px;
+  left: 26px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(172deg);
+  -webkit-transform: rotate(172deg);
+  -moz-transform: rotate(172deg);
+  -ms-transform: rotate(172deg);
+  -o-transform: rotate(172deg);
+}
+
+#challenge-8 .small-ball-5:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 45px 45px;
+}
+
+#challenge-8 .small-ball-6 {
+  position: absolute;
+  top: 40px;
+  left: 8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(232deg);
+  -webkit-transform: rotate(232deg);
+  -moz-transform: rotate(232deg);
+  -ms-transform: rotate(232deg);
+  -o-transform: rotate(232deg);
+}
+
+#challenge-8 .small-ball-6:after {
+  content: "";
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 45px 45px;
+}
+
+#challenge-8 .small-ball-7 {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(260deg);
+  -webkit-transform: rotate(260deg);
+  -moz-transform: rotate(260deg);
+  -ms-transform: rotate(260deg);
+  -o-transform: rotate(260deg);
+}
+
+#challenge-8 .small-ball-7:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 45px 45px;
+}
+
+#challenge-8 .small-ball-8 {
+  position: absolute;
+  top: 56px;
+  left: 34px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(195deg);
+  -webkit-transform: rotate(195deg);
+  -moz-transform: rotate(195deg);
+  -ms-transform: rotate(195deg);
+  -o-transform: rotate(195deg);
+}
+
+#challenge-8 .small-ball-8:after {
+  content: "";
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 45px 45px;
+}
+
+#challenge-8 .small-ball-9 {
+  position: absolute;
+  top: 58px;
+  left: 56px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(177deg);
+  -webkit-transform: rotate(177deg);
+  -moz-transform: rotate(177deg);
+  -ms-transform: rotate(177deg);
+  -o-transform: rotate(177deg);
+}
+
+#challenge-8 .small-ball-9:after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 45px 45px;
+}
+
+#challenge-8 .small-ball-10 {
+  position: absolute;
+  top: 41px;
+  left: 43px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(99deg);
+  -webkit-transform: rotate(99deg);
+  -moz-transform: rotate(99deg);
+  -ms-transform: rotate(99deg);
+  -o-transform: rotate(99deg);
+}
+
+#challenge-8 .small-ball-10:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 45px 45px;
+}
+
+#challenge-8 .medium-ball-1 {
+  position: absolute;
+  top: 24px;
+  left: 51px;
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(259deg);
+  -webkit-transform: rotate(259deg);
+  -moz-transform: rotate(259deg);
+  -ms-transform: rotate(259deg);
+  -o-transform: rotate(259deg);
+}
+
+#challenge-8 .medium-ball-1:after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 30px 30px;
+}
+
+#challenge-8 .medium-ball-2 {
+  position: absolute;
+  top: 18px;
+  left: 25px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+  -moz-transform: rotate(7deg);
+  -ms-transform: rotate(7deg);
+  -o-transform: rotate(7deg);
+}
+
+#challenge-8 .medium-ball-2:after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 30px 30px;
+}
+
+#challenge-8 .medium-ball-3 {
+  position: absolute;
+  top: 22px;
+  left: 5px;
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(139deg);
+  -webkit-transform: rotate(139deg);
+  -moz-transform: rotate(139deg);
+  -ms-transform: rotate(139deg);
+  -o-transform: rotate(139deg);
+}
+
+#challenge-8 .medium-ball-3:after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 30px 30px;
+}
+
+#challenge-8 .medium-ball-4 {
+  position: absolute;
+  top: 61px;
+  left: 45px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(293deg);
+  -webkit-transform: rotate(293deg);
+  -moz-transform: rotate(293deg);
+  -ms-transform: rotate(293deg);
+  -o-transform: rotate(293deg);
+}
+
+#challenge-8 .medium-ball-4:after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 30px 30px;
+}
+
+#challenge-8 .medium-ball-5 {
+  position: absolute;
+  top: 8px;
+  left: 48px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(291deg);
+  -webkit-transform: rotate(291deg);
+  -moz-transform: rotate(291deg);
+  -ms-transform: rotate(291deg);
+  -o-transform: rotate(291deg);
+}
+
+#challenge-8 .medium-ball-5:after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 30px 30px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  to {
+    transform: rotate(360deg) translate3d(0, 0, 0);
+  }
+}
+
 #challenge-9 .container {
   width: 400px;
   height: 400px;
@@ -895,8 +1434,9 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   height: 100px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  justify-content: space-around;
   position: absolute;
   bottom: 0;
   padding: 0 20px;
@@ -1031,6 +1571,520 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   position: absolute;
   top: 10px;
   left: -20px;
+}
+
+#challenge-9 .scene .rain-small-1 {
+  position: absolute;
+  left: 278px;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border: 2px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear 1s infinite;
+  -webkit-animation: fall linear 1s infinite;
+  animation-duration: 1.25s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-big-1 {
+  position: absolute;
+  left: 234px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border: 4px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear infinite;
+  -webkit-animation: fall linear infinite;
+  animation-duration: 2.25s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-small-2 {
+  position: absolute;
+  left: 95px;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border: 2px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear 1s infinite;
+  -webkit-animation: fall linear 1s infinite;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-big-2 {
+  position: absolute;
+  left: 230px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border: 4px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear infinite;
+  -webkit-animation: fall linear infinite;
+  animation-duration: 2.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-small-3 {
+  position: absolute;
+  left: 258px;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border: 2px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear 1s infinite;
+  -webkit-animation: fall linear 1s infinite;
+  animation-duration: 2.75s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-big-3 {
+  position: absolute;
+  left: 170px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border: 4px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear infinite;
+  -webkit-animation: fall linear infinite;
+  animation-duration: 3.75s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-small-4 {
+  position: absolute;
+  left: 50px;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border: 2px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear 1s infinite;
+  -webkit-animation: fall linear 1s infinite;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-big-4 {
+  position: absolute;
+  left: 208px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border: 4px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear infinite;
+  -webkit-animation: fall linear infinite;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-small-5 {
+  position: absolute;
+  left: 344px;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border: 2px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear 1s infinite;
+  -webkit-animation: fall linear 1s infinite;
+  animation-duration: 3.25s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-big-5 {
+  position: absolute;
+  left: 333px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border: 4px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear infinite;
+  -webkit-animation: fall linear infinite;
+  animation-duration: 3.25s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-small-6 {
+  position: absolute;
+  left: 94px;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border: 2px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear 1s infinite;
+  -webkit-animation: fall linear 1s infinite;
+  animation-duration: 3.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-big-6 {
+  position: absolute;
+  left: 176px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border: 4px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear infinite;
+  -webkit-animation: fall linear infinite;
+  animation-duration: 4.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-small-7 {
+  position: absolute;
+  left: 47px;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border: 2px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear 1s infinite;
+  -webkit-animation: fall linear 1s infinite;
+  animation-duration: 3.75s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-big-7 {
+  position: absolute;
+  left: 22px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border: 4px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear infinite;
+  -webkit-animation: fall linear infinite;
+  animation-duration: 3.75s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-small-8 {
+  position: absolute;
+  left: 343px;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border: 2px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear 1s infinite;
+  -webkit-animation: fall linear 1s infinite;
+  animation-duration: 4s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-big-8 {
+  position: absolute;
+  left: 304px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border: 4px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear infinite;
+  -webkit-animation: fall linear infinite;
+  animation-duration: 4s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-small-9 {
+  position: absolute;
+  left: 222px;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border: 2px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear 1s infinite;
+  -webkit-animation: fall linear 1s infinite;
+  animation-duration: 3.25s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-big-9 {
+  position: absolute;
+  left: 83px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border: 4px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear infinite;
+  -webkit-animation: fall linear infinite;
+  animation-duration: 3.25s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-small-10 {
+  position: absolute;
+  left: 257px;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border: 2px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear 1s infinite;
+  -webkit-animation: fall linear 1s infinite;
+  animation-duration: 3.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-big-10 {
+  position: absolute;
+  left: 200px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border: 4px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear infinite;
+  -webkit-animation: fall linear infinite;
+  animation-duration: 5.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-small-11 {
+  position: absolute;
+  left: 27px;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border: 2px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear 1s infinite;
+  -webkit-animation: fall linear 1s infinite;
+  animation-duration: 3.75s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-big-11 {
+  position: absolute;
+  left: 303px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border: 4px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear infinite;
+  -webkit-animation: fall linear infinite;
+  animation-duration: 5.75s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-small-12 {
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border: 2px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear 1s infinite;
+  -webkit-animation: fall linear 1s infinite;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-big-12 {
+  position: absolute;
+  left: 324px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border: 4px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear infinite;
+  -webkit-animation: fall linear infinite;
+  animation-duration: 5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-small-13 {
+  position: absolute;
+  left: 293px;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border: 2px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear 1s infinite;
+  -webkit-animation: fall linear 1s infinite;
+  animation-duration: 4.25s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-big-13 {
+  position: absolute;
+  left: 8px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border: 4px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear infinite;
+  -webkit-animation: fall linear infinite;
+  animation-duration: 5.25s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-small-14 {
+  position: absolute;
+  left: 51px;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border: 2px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear 1s infinite;
+  -webkit-animation: fall linear 1s infinite;
+  animation-duration: 5.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-big-14 {
+  position: absolute;
+  left: 3px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border: 4px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear infinite;
+  -webkit-animation: fall linear infinite;
+  animation-duration: 4.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes fall {
+  0% {
+    transform: translate3d(40px, -320px, 0) rotate(-20deg);
+    -webkit-transform: translate3d(40px, -320px, 0) rotate(-20deg);
+    -moz-transform: translate3d(40px, -320px, 0) rotate(-20deg);
+    -ms-transform: translate3d(40px, -320px, 0) rotate(-20deg);
+    -o-transform: translate3d(40px, -320px, 0) rotate(-20deg);
+  }
+  85% {
+    transform: translate3d(0, 0, 0) scale(1, 1) rotate(15deg);
+    -webkit-transform: translate3d(0, 0, 0) scale(1, 1) rotate(15deg);
+    -moz-transform: translate3d(0, 0, 0) scale(1, 1) rotate(15deg);
+    -ms-transform: translate3d(0, 0, 0) scale(1, 1) rotate(15deg);
+    -o-transform: translate3d(0, 0, 0) scale(1, 1) rotate(15deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(2, 0) rotate(0);
+    -webkit-transform: translate3d(0, 0, 0) scale(2, 0) rotate(0);
+    -moz-transform: translate3d(0, 0, 0) scale(2, 0) rotate(0);
+    -ms-transform: translate3d(0, 0, 0) scale(2, 0) rotate(0);
+    -o-transform: translate3d(0, 0, 0) scale(2, 0) rotate(0);
+  }
 }
 
 @keyframes moon-rise {

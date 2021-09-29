@@ -11,6 +11,10 @@
   animation: $args;
   -webkit-animation: $args;
 }
+@mixin filter($args...) {
+  filter: $args;
+  -webkit-filter: $args;
+}
 
 @mixin transform($args...) {
   transform: $args;

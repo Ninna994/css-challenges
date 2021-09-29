@@ -180,6 +180,7 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
     }
   }
 }
+
 #challenge-3 {
   .frame {
     background-color: #272c34;
@@ -502,7 +503,7 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
       .container {
         width: 100%;
         height: 100%;
-        background-color: #e1cfc2;
+        background-color: #f5e8df;
         flex-direction: column;
         @include flex-center();
         font-weight: 600;
@@ -511,6 +512,9 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
           text-transform: capitalize;
           font-size: 0.8rem;
           font-weight: 100;
+        }
+        &:hover {
+          background-color: #e1cfc2;
         }
       }
     }
@@ -677,6 +681,71 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
     }
   }
 }
+
+#challenge-8 {
+  .frame {
+    background-color: #000;
+  }
+  .ball {
+    background-color: #fff;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    @include border-radius(50%);
+  }
+  @for $i from 1 through 10 {
+    .small-ball-#{$i} {
+      position: absolute;
+      top: (random(50) + $i) + px;
+      left: (random(50) + $i) + px;
+      width: (10 + $i) + px;
+      height: (10 + $i) + px;
+      @include border-radius(50%);
+      @include transform(rotate(random(300) + deg));
+      &:after {
+        content: "";
+        width: (5 + $i) + px;
+        height: (5 + $i) + px;
+        position: absolute;
+        background-color: #fff;
+        @include border-radius(50%);
+        @include animation(rotate 5s ease 0.5s infinite);
+        transform-origin: 45px 45px;
+      }
+    }
+  }
+  @for $i from 1 through 5 {
+    .medium-ball-#{$i} {
+      position: absolute;
+      top: (random(60) + $i) + px;
+      left: (random(60) + $i) + px;
+      width: (50 + $i) + px;
+      height: (50 + $i) + px;
+      @include border-radius(50%);
+      @include transform(rotate(random(300) + deg));
+      &:after {
+        content: "";
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        background-color: #fff;
+        @include border-radius(50%);
+        @include animation(rotate 5s ease 0.5s infinite);
+        transform-origin: 30px 30px;
+      }
+    }
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    to {
+      transform: rotate(360deg) translate3d(0, 0, 0);
+    }
+  }
+}
+
 #challenge-9 {
   .container {
     width: 400px;
@@ -687,9 +756,8 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
     color: #1a2238;
     height: 100px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-center();
+    justify-content: space-around;
     position: absolute;
     bottom: 0;
     padding: 0 20px;
@@ -713,7 +781,6 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
     height: calc(100% - 100px);
     background-color: #1a2238;
     position: relative;
-    // drop
 
     .circle {
       background-color: #303c5d;
@@ -775,11 +842,50 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
         }
       }
     }
-    .rain-small {
-      // background-color: #7fc1f9;
-      // width: 10px;
-      // height: 20px;
-      // filter: brightness(1.2);
+    @for $i from 1 through 14 {
+      .rain-small-#{$i} {
+        position: absolute;
+        left: (random(350) + px);
+        bottom: 0;
+        width: 5px;
+        height: 5px;
+        border: 2px solid lightblue;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: lightblue;
+        @include animation(fall linear 1s infinite);
+        animation-duration: (random(2) + $i/4) + s;
+        animation-fill-mode: both;
+      }
+      .rain-big-#{$i} {
+        position: absolute;
+        left: (random(350) + px);
+        bottom: 0;
+        width: 10px;
+        height: 10px;
+        border: 4px solid lightblue;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: lightblue;
+        @include animation(fall linear infinite);
+        animation-duration: (random(3) + $i/4) + s;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+      }
+    }
+  }
+
+  @keyframes fall {
+    0% {
+      @include transform(translate3d(40px, -320px, 0) rotate(-20deg));
+    }
+    85% {
+      @include transform(translate3d(0, 0, 0) scale(1, 1) rotate(15deg));
+    }
+    100% {
+      @include transform(translate3d(0, 0, 0) scale(2, 0) rotate(0));
     }
   }
 
@@ -792,6 +898,7 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
     }
   }
 }
+
 #challenge-10 {
   .frame {
     background-color: #4c4c4c;
