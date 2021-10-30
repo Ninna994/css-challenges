@@ -973,3 +973,247 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
     }
   }
 }
+
+#challenge-12 {
+  .frame {
+    background-color: #4cb6de;
+    color: #fff;
+    font-size: 1.4rem;
+    // highlight -#286F8A
+    // info -#286F8A
+    .text {
+      width: 320px;
+      padding-top: 10px;
+      margin: 0 auto;
+      &:before {
+        content: ",,";
+        font-size: 15rem;
+        @include absolute($top: -220px, $left: -40px);
+        font-family: Arial, sans-serif;
+        letter-spacing: -30px;
+        opacity: 0.5;
+      }
+      .tooltip {
+        display: block;
+        width: 300px;
+        height: 120px;
+        position: absolute;
+        top: -60px;
+        @include transition(all 0.5s ease-in-out);
+        @include transform(translate3d(0, -20px, 0));
+        background-color: #286f8a;
+        opacity: 0;
+        visibility: hidden;
+
+        &:after {
+          content: "";
+          width: 0;
+          height: 0;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-top: 10px solid #286f8a;
+          position: absolute;
+          bottom: -10px;
+          left: calc(50% - 10px);
+        }
+        .tooltip-header {
+          width: 100%;
+          padding-left: 10px;
+          display: flex;
+          justify-content: flex-start;
+          background-color: #fff;
+          font-size: 0.9rem;
+          color: #286f8a;
+          i {
+            font-size: 1.2rem;
+            padding-left: 10px;
+            display: inline-block;
+            color: #286f8a;
+            &:hover {
+              opacity: 0.7;
+            }
+          }
+        }
+        .text-desc {
+          font-size: 0.9rem;
+          padding: 5px;
+        }
+      }
+      .highlighted {
+        background-color: #286f8a;
+        padding: 3px;
+        cursor: pointer;
+        &:hover .tooltip,
+        &:focus .tooltip {
+          opacity: 1;
+          @include transform(translate3d(0, 0, 0));
+          visibility: visible;
+        }
+      }
+    }
+    .author {
+      font-style: italic;
+      font-weight: 100;
+      margin-top: 10px;
+      padding-top: 20px;
+    }
+  }
+}
+
+#challenge-13 {
+  .center {
+    width: 100%;
+    height: 100%;
+  }
+  .grid-container {
+    display: grid;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "first second"
+      "third fourth";
+  }
+  .grid-item {
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .overlay {
+      @include absolute($top: 0, $left: 0);
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      @include transition(opacity 0.7s ease);
+      .plus {
+        width: 50px;
+        height: 50px;
+        background-color: #ec6565;
+        @include border-radius(50%);
+        position: absolute;
+        top: calc(50% - 25px);
+        left: calc(50% - 25px);
+        @include transition(all 0.7s ease);
+        cursor: pointer;
+        &:after {
+          content: "+";
+          font-size: 1.7rem;
+          color: #fff;
+          @include centerer();
+        }
+      }
+    }
+    &:hover .overlay {
+      opacity: 1;
+    }
+    &:hover .overlay .plus {
+      @include animation(animate-plus 0.7s ease);
+    }
+  }
+
+  .detail-item {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    background-color: #ec6565;
+    display: flex;
+    flex-direction: column;
+    @include transition(all 0.7s ease);
+    .background-section {
+      width: 100%;
+      height: 50%;
+      background-image: url("https://100dayscss.com/codepen/13-1-header.jpg");
+      background-size: cover;
+
+      .x-button {
+        @include absolute($right: -50px, $top: 10px);
+        width: 40px;
+        height: 40px;
+        @include border-radius(50%);
+        background-color: #ec6565;
+        cursor: pointer;
+        @include transition(all 0.7s ease);
+        &:after {
+          content: "✕";
+          font-size: 1rem;
+          color: #fff;
+          @include centerer();
+        }
+        &:hover {
+          background-color: #fff;
+          &:after {
+            color: #ec6565;
+          }
+        }
+      }
+    }
+    .details-section {
+      width: 100%;
+      height: 50%;
+      position: relative;
+      padding-top: 60px;
+      text-align: center;
+      @include transition(all 0.7s ease);
+
+      .profile-image {
+        position: absolute;
+        top: -500px;
+        left: calc(50% - 50px);
+        width: 100px;
+        height: 100px;
+        border: 2px solid #fff;
+        background-image: url("https://100dayscss.com/codepen/13-1.jpg");
+        background-size: cover;
+        @include border-radius(50%);
+        @include transition(all 0.7s ease);
+      }
+      p {
+        font-size: 1.2rem;
+        color: #fff;
+      }
+      .social {
+        display: flex;
+        justify-content: center;
+        column-gap: 25px;
+        padding-top: 20px;
+        i {
+          font-size: 3rem;
+          cursor: pointer;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+
+    &.active {
+      visibility: visible;
+      height: 100%;
+      opacity: 1;
+      .x-button {
+        right: 10px;
+      }
+
+      .profile-image {
+        top: -50px;
+      }
+    }
+  }
+
+  @keyframes animate-plus {
+    0% {
+      @include transform(scale(2));
+    }
+    100% {
+      @include transform(scale(1));
+    }
+  }
+}

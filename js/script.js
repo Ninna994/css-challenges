@@ -17,3 +17,13 @@ $('.bar').on('click', function () {
 $('.search-icon').on('click', function () {
     $('.search-input').toggleClass('show-search');
 })
+
+// challenge 13 
+
+$('.plus').on('click', function () {
+    $('.detail-item').toggleClass('active')
+})
+
+$('.x-button').on('click', function () {
+    $('.detail-item').toggleClass('active')
+})
