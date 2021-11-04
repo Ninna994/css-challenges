@@ -1,0 +1,2185 @@
+@import url(https://fonts.googleapis.com/css?family=Courier+Prime:regular,italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  height: 50vh;
+  position: relative;
+  width: 100%;
+}
+
+/* ================
+UNCOMMENT WHEN FINISHED TO MAKE GRID
+==================*/
+.frame {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+#challenge-1 .frame {
+  background-image: linear-gradient(to bottom left, #4ec6ca, #43389f);
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Courier Prime", sans-serif;
+  font-weight: 700;
+  line-height: 1;
+}
+
+#challenge-1 .number {
+  position: relative;
+  display: flex;
+}
+
+#challenge-1 .number .one {
+  background-color: #fff;
+  height: 100px;
+  width: 25px;
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+  z-index: 5;
+  position: relative;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+#challenge-1 .number .one:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  width: 100%;
+  height: 50%;
+  background-color: #fff;
+  opacity: 0.8;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+#challenge-1 .number .zero {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 25px solid #fff;
+  margin-left: -5px;
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+}
+
+#challenge-1 .number .zero:nth-of-type(2) {
+  margin-left: -5px;
+  z-index: 3;
+}
+
+#challenge-1 .days {
+  font-size: 5rem;
+  margin-bottom: 0;
+}
+
+#challenge-1 .css {
+  font-size: 1.5rem;
+}
+
+#challenge-2 .frame {
+  background-color: #3faf82;
+}
+
+#challenge-2 .bar {
+  width: 100px;
+  height: 10px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease-in out;
+}
+
+#challenge-2 .bar.bar-1, #challenge-2 .bar.bar-2 {
+  margin-bottom: 15px;
+}
+
+#challenge-2 .bar-container {
+  position: relative;
+  height: 60px;
+  cursor: pointer;
+}
+
+#challenge-2 .bar-container.active .bar-1 {
+  animation: animate1 1s forwards;
+  -webkit-animation: animate1 1s forwards;
+}
+
+#challenge-2 .bar-container.active .bar-2 {
+  animation: animate2 1s forwards;
+  -webkit-animation: animate2 1s forwards;
+}
+
+#challenge-2 .bar-container.active .bar-3 {
+  animation: animate3 1s forwards;
+  -webkit-animation: animate3 1s forwards;
+}
+
+@keyframes animate1 {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(25px) rotate(0);
+  }
+  100% {
+    transform: translateY(25px) rotate(45deg);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes animate3 {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-25px) rotate(0);
+  }
+  100% {
+    transform: translateY(-25px) rotate(135deg);
+  }
+}
+
+#challenge-3 .frame {
+  background-color: #272c34;
+}
+
+#challenge-3 .circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #7ddffc;
+  overflow: hidden;
+  position: relative;
+}
+
+#challenge-3 .circle .sun {
+  position: absolute;
+  top: 50px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  background-color: yellow;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: sun 4s infinite;
+  -webkit-animation: sun 4s infinite;
+}
+
+#challenge-3 .circle .sand {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  background-color: #f0de75;
+}
+
+#challenge-3 .circle .pyramid-front {
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 60px solid white;
+  position: absolute;
+  bottom: 30%;
+  left: calc(50% - 60px);
+  z-index: 1;
+}
+
+#challenge-3 .circle .pyramid-back {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 60px solid lightgray;
+  position: absolute;
+  bottom: 30%;
+  left: calc(50% - 20px);
+  z-index: 0;
+}
+
+#challenge-3 .circle .shadow {
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-top: 40px solid rgba(73, 73, 73, 0.549);
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 60px);
+  z-index: 0;
+}
+
+@keyframes sun {}#challenge-4 .frame {
+  background-color: #e56262;
+}
+
+#challenge-4 .circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  box-shadow: 0 5px 10px 0 rgba(185, 166, 166, 0.5);
+  background: #fff;
+}
+
+#challenge-4 .circle.circle-main {
+  position: relative;
+  animation: circle 2s linear alternate infinite;
+  -webkit-animation: circle 2s linear alternate infinite;
+}
+
+#challenge-4 .circle .circle-1 {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 70px;
+  height: 70px;
+  animation: circle-1 2s linear alternate infinite;
+  -webkit-animation: circle-1 2s linear alternate infinite;
+}
+
+#challenge-4 .circle .circle-2 {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  width: 30px;
+  height: 30px;
+  animation: circle-2 2s linear alternate infinite;
+  -webkit-animation: circle-2 2s linear alternate infinite;
+}
+
+@keyframes circle {
+  0% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+
+@keyframes circle-1 {
+  0% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+  }
+  33% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+
+@keyframes circle-2 {
+  0% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+  }
+  66% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+
+#challenge-5 .frame {
+  background-color: #42a7a1;
+}
+
+#challenge-5 .table {
+  width: 300px;
+  margin: 0 auto;
+  height: 250px;
+  background-color: #fff;
+  color: #949494;
+}
+
+#challenge-5 .table .table-header {
+  background-color: #f1ba64;
+  height: 80px;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#challenge-5 .table .table-header * {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#challenge-5 .table .table-header * span {
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#challenge-5 .table .table-header * span.small {
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+#challenge-5 .table .table-header .data-left {
+  padding-left: 20px;
+  text-align: left;
+}
+
+#challenge-5 .table .table-header .data-right {
+  text-align: right;
+  padding-right: 20px;
+}
+
+#challenge-5 .table .table-content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#challenge-5 .table .table-content .legend {
+  height: 42px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  border-bottom: 1px solid #9494943f;
+}
+
+#challenge-5 .table .table-content .legend .views,
+#challenge-5 .table .table-content .legend .purchases {
+  padding-right: 5px;
+  font-size: 0.7rem;
+}
+
+#challenge-5 .table .table-content .legend .views span,
+#challenge-5 .table .table-content .legend .purchases span {
+  display: inline-block;
+  width: 15px;
+  height: 3px;
+  background-color: red;
+  vertical-align: middle;
+}
+
+#challenge-5 .table .table-content .legend .purchases span {
+  background-color: blue;
+}
+
+#challenge-5 .table .table-content .statistics {
+  height: 42px;
+  border-bottom: 1px solid #9494943f;
+}
+
+#challenge-5 .table .table-content .days {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+#challenge-5 .table .table-content .polyline {
+  position: absolute;
+}
+
+#challenge-6 .frame {
+  background-image: linear-gradient(to top right, #eebe6c 0%, #ca7c4e 100%);
+  font-family: "Open Sans", sans-serif;
+}
+
+#challenge-6 .card-container {
+  width: 350px;
+  height: 350px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  color: #786450;
+}
+
+#challenge-6 .card-container .left-section {
+  width: 60%;
+  flex-direction: column;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#challenge-6 .card-container .left-section .profile-image {
+  width: 100px;
+  position: relative;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+}
+
+#challenge-6 .card-container .left-section .profile-image img {
+  width: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+#challenge-6 .card-container .left-section .profile-image::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 106px;
+  height: 106px;
+  border: 1px solid;
+  border-color: #786450 #786450 #786450 transparent;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(0);
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0);
+  transition: all 1s;
+}
+
+#challenge-6 .card-container .left-section .profile-image::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: 112px;
+  height: 112px;
+  border: 1px solid;
+  border-color: #786450 transparent #786450 #786450;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(0);
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0);
+  transition: all 1s;
+}
+
+#challenge-6 .card-container .left-section .profile-image:hover::after {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+
+#challenge-6 .card-container .left-section .profile-image:hover::before {
+  transform: rotate(-360deg);
+  -webkit-transform: rotate(-360deg);
+  -moz-transform: rotate(-360deg);
+  -ms-transform: rotate(-360deg);
+  -o-transform: rotate(-360deg);
+}
+
+#challenge-6 .card-container .left-section .profile-description {
+  padding-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#challenge-6 .card-container .left-section .profile-description p {
+  font-weight: 600;
+}
+
+#challenge-6 .card-container .left-section .profile-description p.small {
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+
+#challenge-6 .card-container .left-section .btn {
+  width: 100%;
+  display: inline-block;
+  color: #786450;
+  border: 1px solid #786450;
+  padding: 5px 0px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 500;
+  transition: all 0.3s ease-in;
+}
+
+#challenge-6 .card-container .left-section .btn:hover {
+  background-color: #786450;
+  color: #fff;
+}
+
+#challenge-6 .card-container .right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  row-gap: 1px;
+}
+
+#challenge-6 .card-container .right-section .container {
+  width: 100%;
+  height: 100%;
+  background-color: #f5e8df;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+#challenge-6 .card-container .right-section .container .description {
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+#challenge-6 .card-container .right-section .container:hover {
+  background-color: #e1cfc2;
+}
+
+#challenge-7 .frame {
+  background-color: #264057;
+}
+
+#challenge-7 .container {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+#challenge-7 .container .menu {
+  border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 5px 0 0 5px;
+  -moz-border-radius: 5px 0 0 5px;
+  -ms-border-radius: 5px 0 0 5px;
+  -o-border-radius: 5px 0 0 5px;
+  position: absolute;
+  height: 90%;
+  top: 5%;
+  left: 50%;
+  width: 150px;
+  background-color: #43627d;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  transition: all 0.5s ease;
+}
+
+#challenge-7 .container .menu .menu-links {
+  color: #93b2cd;
+  text-decoration: none;
+  font-size: 0.8rem;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+#challenge-7 .container .menu .menu-links i {
+  font-size: 0.9rem;
+  padding-right: 5px;
+}
+
+#challenge-7 .container .menu .menu-links:hover {
+  background-color: #385269;
+  color: #fff;
+}
+
+#challenge-7 .container .menu-active {
+  left: 0;
+}
+
+#challenge-7 .container .notifications {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transition: all 0.5s ease;
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+
+#challenge-7 .container .notifications .notification-header {
+  width: 100%;
+  height: 60px;
+  background-color: #5f98cd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  color: #fff;
+  font-weight: 600;
+}
+
+#challenge-7 .container .notifications .notification-header .search-icon i {
+  color: #b2daff;
+  transition: all 0.2s ease;
+}
+
+#challenge-7 .container .notifications .notification-header .search-icon .search:hover i {
+  color: #fff;
+}
+
+#challenge-7 .container .notifications .notification-header .search-input {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  transition: all 0.5s ease;
+  border: none;
+  position: absolute;
+  height: 30px;
+  width: 0;
+  right: 50px;
+  top: 15px;
+}
+
+#challenge-7 .container .notifications .notification-header .show-search {
+  width: 80%;
+  padding: 5px 10px;
+}
+
+#challenge-7 .container .notifications .list {
+  height: calc(100% - 60px);
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-left: 2px solid #ebebeb;
+  list-style-type: none;
+}
+
+#challenge-7 .container .notifications .list .list-item {
+  color: #666666;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+#challenge-7 .container .notifications .list .list-item::before {
+  content: "";
+  background-color: #fff;
+  border: 2px solid #5f98cd;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 15px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+#challenge-7 .container .notifications .list .list-item:hover {
+  color: #5f98cd;
+}
+
+#challenge-7 .container .notifications .list .list-item .time {
+  font-size: 0.8rem;
+  margin-top: -5px;
+}
+
+#challenge-7 .container .notification-move {
+  transform: translateX(150px);
+  -webkit-transform: translateX(150px);
+  -moz-transform: translateX(150px);
+  -ms-transform: translateX(150px);
+  -o-transform: translateX(150px);
+}
+
+#challenge-7 .container .menu-toggler {
+  position: relative;
+  cursor: pointer;
+}
+
+#challenge-7 .container .menu-toggler .bar {
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  background-color: #b2daff;
+  transition: all 0.2s ease;
+}
+
+#challenge-7 .container .menu-toggler .bar.bar-top {
+  top: -5px;
+}
+
+#challenge-7 .container .menu-toggler .bar.bar-top:after {
+  position: absolute;
+  top: -2px;
+  right: 0px;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  outline: 2px solid #5f98cd;
+  background-color: #b2daff;
+  transition: all 0.2s ease;
+}
+
+#challenge-7 .container .menu-toggler .bar.bar-bottom {
+  top: 5px;
+}
+
+#challenge-7 .container .menu-toggler:hover .bar,
+#challenge-7 .container .menu-toggler:hover .bar-top::after {
+  background-color: #fff;
+}
+
+#challenge-8 .frame {
+  background-color: #000;
+}
+
+#challenge-8 .ball {
+  background-color: #fff;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+#challenge-8 .small-ball-1 {
+  position: absolute;
+  top: 13px;
+  left: 16px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(16deg);
+  -webkit-transform: rotate(16deg);
+  -moz-transform: rotate(16deg);
+  -ms-transform: rotate(16deg);
+  -o-transform: rotate(16deg);
+}
+
+#challenge-8 .small-ball-1:after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 45px 45px;
+}
+
+#challenge-8 .small-ball-2 {
+  position: absolute;
+  top: 8px;
+  left: 27px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(208deg);
+  -webkit-transform: rotate(208deg);
+  -moz-transform: rotate(208deg);
+  -ms-transform: rotate(208deg);
+  -o-transform: rotate(208deg);
+}
+
+#challenge-8 .small-ball-2:after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 45px 45px;
+}
+
+#challenge-8 .small-ball-3 {
+  position: absolute;
+  top: 30px;
+  left: 52px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(195deg);
+  -webkit-transform: rotate(195deg);
+  -moz-transform: rotate(195deg);
+  -ms-transform: rotate(195deg);
+  -o-transform: rotate(195deg);
+}
+
+#challenge-8 .small-ball-3:after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 45px 45px;
+}
+
+#challenge-8 .small-ball-4 {
+  position: absolute;
+  top: 52px;
+  left: 36px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(54deg);
+  -webkit-transform: rotate(54deg);
+  -moz-transform: rotate(54deg);
+  -ms-transform: rotate(54deg);
+  -o-transform: rotate(54deg);
+}
+
+#challenge-8 .small-ball-4:after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 45px 45px;
+}
+
+#challenge-8 .small-ball-5 {
+  position: absolute;
+  top: 44px;
+  left: 17px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(132deg);
+  -webkit-transform: rotate(132deg);
+  -moz-transform: rotate(132deg);
+  -ms-transform: rotate(132deg);
+  -o-transform: rotate(132deg);
+}
+
+#challenge-8 .small-ball-5:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 45px 45px;
+}
+
+#challenge-8 .small-ball-6 {
+  position: absolute;
+  top: 53px;
+  left: 8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(182deg);
+  -webkit-transform: rotate(182deg);
+  -moz-transform: rotate(182deg);
+  -ms-transform: rotate(182deg);
+  -o-transform: rotate(182deg);
+}
+
+#challenge-8 .small-ball-6:after {
+  content: "";
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 45px 45px;
+}
+
+#challenge-8 .small-ball-7 {
+  position: absolute;
+  top: 24px;
+  left: 37px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(204deg);
+  -webkit-transform: rotate(204deg);
+  -moz-transform: rotate(204deg);
+  -ms-transform: rotate(204deg);
+  -o-transform: rotate(204deg);
+}
+
+#challenge-8 .small-ball-7:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 45px 45px;
+}
+
+#challenge-8 .small-ball-8 {
+  position: absolute;
+  top: 28px;
+  left: 19px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(31deg);
+  -webkit-transform: rotate(31deg);
+  -moz-transform: rotate(31deg);
+  -ms-transform: rotate(31deg);
+  -o-transform: rotate(31deg);
+}
+
+#challenge-8 .small-ball-8:after {
+  content: "";
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 45px 45px;
+}
+
+#challenge-8 .small-ball-9 {
+  position: absolute;
+  top: 19px;
+  left: 56px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(117deg);
+  -webkit-transform: rotate(117deg);
+  -moz-transform: rotate(117deg);
+  -ms-transform: rotate(117deg);
+  -o-transform: rotate(117deg);
+}
+
+#challenge-8 .small-ball-9:after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 45px 45px;
+}
+
+#challenge-8 .small-ball-10 {
+  position: absolute;
+  top: 14px;
+  left: 49px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(86deg);
+  -webkit-transform: rotate(86deg);
+  -moz-transform: rotate(86deg);
+  -ms-transform: rotate(86deg);
+  -o-transform: rotate(86deg);
+}
+
+#challenge-8 .small-ball-10:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 45px 45px;
+}
+
+#challenge-8 .medium-ball-1 {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(219deg);
+  -webkit-transform: rotate(219deg);
+  -moz-transform: rotate(219deg);
+  -ms-transform: rotate(219deg);
+  -o-transform: rotate(219deg);
+}
+
+#challenge-8 .medium-ball-1:after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 30px 30px;
+}
+
+#challenge-8 .medium-ball-2 {
+  position: absolute;
+  top: 8px;
+  left: 53px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(16deg);
+  -webkit-transform: rotate(16deg);
+  -moz-transform: rotate(16deg);
+  -ms-transform: rotate(16deg);
+  -o-transform: rotate(16deg);
+}
+
+#challenge-8 .medium-ball-2:after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 30px 30px;
+}
+
+#challenge-8 .medium-ball-3 {
+  position: absolute;
+  top: 26px;
+  left: 59px;
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(111deg);
+  -webkit-transform: rotate(111deg);
+  -moz-transform: rotate(111deg);
+  -ms-transform: rotate(111deg);
+  -o-transform: rotate(111deg);
+}
+
+#challenge-8 .medium-ball-3:after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 30px 30px;
+}
+
+#challenge-8 .medium-ball-4 {
+  position: absolute;
+  top: 36px;
+  left: 48px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(51deg);
+  -webkit-transform: rotate(51deg);
+  -moz-transform: rotate(51deg);
+  -ms-transform: rotate(51deg);
+  -o-transform: rotate(51deg);
+}
+
+#challenge-8 .medium-ball-4:after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 30px 30px;
+}
+
+#challenge-8 .medium-ball-5 {
+  position: absolute;
+  top: 22px;
+  left: 14px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: rotate(279deg);
+  -webkit-transform: rotate(279deg);
+  -moz-transform: rotate(279deg);
+  -ms-transform: rotate(279deg);
+  -o-transform: rotate(279deg);
+}
+
+#challenge-8 .medium-ball-5:after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate 5s ease 0.5s infinite;
+  -webkit-animation: rotate 5s ease 0.5s infinite;
+  transform-origin: 30px 30px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  to {
+    transform: rotate(360deg) translate3d(0, 0, 0);
+  }
+}
+
+#challenge-9 .container {
+  width: 400px;
+  height: 400px;
+}
+
+#challenge-9 .information {
+  background-color: #fff;
+  color: #1a2238;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  padding: 0 20px;
+}
+
+#challenge-9 .information p {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+#challenge-9 .information .info p {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+#challenge-9 .information .info p span {
+  font-weight: 400;
+}
+
+#challenge-9 .scene {
+  width: 100%;
+  height: calc(100% - 100px);
+  background-color: #1a2238;
+  position: relative;
+}
+
+#challenge-9 .scene .circle {
+  background-color: #303c5d;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+#challenge-9 .scene .circle.small-circle {
+  position: absolute;
+  bottom: -100px;
+  left: -20px;
+  width: 200px;
+  height: 150px;
+}
+
+#challenge-9 .scene .circle.small-circle:nth-child(4) {
+  position: absolute;
+  right: -80px;
+  bottom: -100px;
+  left: unset;
+}
+
+#challenge-9 .scene .circle.big-circle {
+  position: absolute;
+  bottom: -110px;
+  left: 100px;
+  width: 250px;
+  height: 200px;
+}
+
+#challenge-9 .scene .circle-back {
+  background-color: #26314f;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  bottom: -100px;
+  left: -20px;
+  width: 300px;
+  height: 200px;
+}
+
+#challenge-9 .scene .circle-back.circle-back--1 {
+  position: absolute;
+  right: -80px;
+  bottom: -100px;
+  left: unset;
+}
+
+#challenge-9 .scene .moon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: #f6edbd;
+  box-shadow: 0 0 15px 0 #f6edbd;
+  animation: moon-rise 2s ease 1;
+  -webkit-animation: moon-rise 2s ease 1;
+}
+
+#challenge-9 .scene .moon .crater {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 15px;
+  height: 15px;
+  background-color: #ece1a8;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+#challenge-9 .scene .moon .crater:after, #challenge-9 .scene .moon .crater::before {
+  content: "";
+  background-color: #ece1a8;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+#challenge-9 .scene .moon .crater:after {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}
+
+#challenge-9 .scene .moon .crater:before {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 10px;
+  left: -20px;
+}
+
+#challenge-9 .scene .rain-small-1 {
+  position: absolute;
+  left: 132px;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border: 2px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear 1s infinite;
+  -webkit-animation: fall linear 1s infinite;
+  animation-duration: 1.25s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-big-1 {
+  position: absolute;
+  left: 113px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border: 4px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear infinite;
+  -webkit-animation: fall linear infinite;
+  animation-duration: 2.25s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-small-2 {
+  position: absolute;
+  left: 241px;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border: 2px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear 1s infinite;
+  -webkit-animation: fall linear 1s infinite;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-big-2 {
+  position: absolute;
+  left: 319px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border: 4px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear infinite;
+  -webkit-animation: fall linear infinite;
+  animation-duration: 3.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-small-3 {
+  position: absolute;
+  left: 39px;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border: 2px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear 1s infinite;
+  -webkit-animation: fall linear 1s infinite;
+  animation-duration: 2.75s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-big-3 {
+  position: absolute;
+  left: 277px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border: 4px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear infinite;
+  -webkit-animation: fall linear infinite;
+  animation-duration: 2.75s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-small-4 {
+  position: absolute;
+  left: 107px;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border: 2px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear 1s infinite;
+  -webkit-animation: fall linear 1s infinite;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-big-4 {
+  position: absolute;
+  left: 245px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border: 4px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear infinite;
+  -webkit-animation: fall linear infinite;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-small-5 {
+  position: absolute;
+  left: 158px;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border: 2px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear 1s infinite;
+  -webkit-animation: fall linear 1s infinite;
+  animation-duration: 2.25s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-big-5 {
+  position: absolute;
+  left: 199px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border: 4px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear infinite;
+  -webkit-animation: fall linear infinite;
+  animation-duration: 3.25s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-small-6 {
+  position: absolute;
+  left: 293px;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border: 2px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear 1s infinite;
+  -webkit-animation: fall linear 1s infinite;
+  animation-duration: 3.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-big-6 {
+  position: absolute;
+  left: 277px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border: 4px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear infinite;
+  -webkit-animation: fall linear infinite;
+  animation-duration: 4.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-small-7 {
+  position: absolute;
+  left: 229px;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border: 2px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear 1s infinite;
+  -webkit-animation: fall linear 1s infinite;
+  animation-duration: 2.75s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-big-7 {
+  position: absolute;
+  left: 267px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border: 4px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear infinite;
+  -webkit-animation: fall linear infinite;
+  animation-duration: 2.75s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-small-8 {
+  position: absolute;
+  left: 220px;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border: 2px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear 1s infinite;
+  -webkit-animation: fall linear 1s infinite;
+  animation-duration: 4s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-big-8 {
+  position: absolute;
+  left: 60px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border: 4px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear infinite;
+  -webkit-animation: fall linear infinite;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-small-9 {
+  position: absolute;
+  left: 235px;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border: 2px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear 1s infinite;
+  -webkit-animation: fall linear 1s infinite;
+  animation-duration: 3.25s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-big-9 {
+  position: absolute;
+  left: 255px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border: 4px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear infinite;
+  -webkit-animation: fall linear infinite;
+  animation-duration: 3.25s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-small-10 {
+  position: absolute;
+  left: 278px;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border: 2px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear 1s infinite;
+  -webkit-animation: fall linear 1s infinite;
+  animation-duration: 4.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-big-10 {
+  position: absolute;
+  left: 330px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border: 4px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear infinite;
+  -webkit-animation: fall linear infinite;
+  animation-duration: 3.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-small-11 {
+  position: absolute;
+  left: 302px;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border: 2px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear 1s infinite;
+  -webkit-animation: fall linear 1s infinite;
+  animation-duration: 3.75s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-big-11 {
+  position: absolute;
+  left: 23px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border: 4px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear infinite;
+  -webkit-animation: fall linear infinite;
+  animation-duration: 3.75s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-small-12 {
+  position: absolute;
+  left: 40px;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border: 2px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear 1s infinite;
+  -webkit-animation: fall linear 1s infinite;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-big-12 {
+  position: absolute;
+  left: 116px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border: 4px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear infinite;
+  -webkit-animation: fall linear infinite;
+  animation-duration: 6s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-small-13 {
+  position: absolute;
+  left: 122px;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border: 2px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear 1s infinite;
+  -webkit-animation: fall linear 1s infinite;
+  animation-duration: 5.25s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-big-13 {
+  position: absolute;
+  left: 154px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border: 4px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear infinite;
+  -webkit-animation: fall linear infinite;
+  animation-duration: 6.25s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-small-14 {
+  position: absolute;
+  left: 157px;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border: 2px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear 1s infinite;
+  -webkit-animation: fall linear 1s infinite;
+  animation-duration: 5.5s;
+  animation-fill-mode: both;
+}
+
+#challenge-9 .scene .rain-big-14 {
+  position: absolute;
+  left: 152px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border: 4px solid lightblue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: lightblue;
+  animation: fall linear infinite;
+  -webkit-animation: fall linear infinite;
+  animation-duration: 5.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes fall {
+  0% {
+    transform: translate3d(40px, -320px, 0) rotate(-20deg);
+    -webkit-transform: translate3d(40px, -320px, 0) rotate(-20deg);
+    -moz-transform: translate3d(40px, -320px, 0) rotate(-20deg);
+    -ms-transform: translate3d(40px, -320px, 0) rotate(-20deg);
+    -o-transform: translate3d(40px, -320px, 0) rotate(-20deg);
+  }
+  85% {
+    transform: translate3d(0, 0, 0) scale(1, 1) rotate(15deg);
+    -webkit-transform: translate3d(0, 0, 0) scale(1, 1) rotate(15deg);
+    -moz-transform: translate3d(0, 0, 0) scale(1, 1) rotate(15deg);
+    -ms-transform: translate3d(0, 0, 0) scale(1, 1) rotate(15deg);
+    -o-transform: translate3d(0, 0, 0) scale(1, 1) rotate(15deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(2, 0) rotate(0);
+    -webkit-transform: translate3d(0, 0, 0) scale(2, 0) rotate(0);
+    -moz-transform: translate3d(0, 0, 0) scale(2, 0) rotate(0);
+    -ms-transform: translate3d(0, 0, 0) scale(2, 0) rotate(0);
+    -o-transform: translate3d(0, 0, 0) scale(2, 0) rotate(0);
+  }
+}
+
+@keyframes moon-rise {
+  0% {
+    transform: translate(-50px, 220px);
+    -webkit-transform: translate(-50px, 220px);
+    -moz-transform: translate(-50px, 220px);
+    -ms-transform: translate(-50px, 220px);
+    -o-transform: translate(-50px, 220px);
+  }
+  100% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  }
+}
+
+#challenge-10 .frame {
+  background-color: #4c4c4c;
+}
+
+#challenge-10 .watch {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  background-color: #242424;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 7px solid #3a3a3a;
+}
+
+#challenge-10 .watch .spinner {
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  top: 2.5%;
+  left: 2.5%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 3px solid #f85b5b;
+  background-color: #242424;
+}
+
+#challenge-10 .watch .dots {
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  top: 7.5%;
+  left: 7.5%;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%23fff' stroke-width='5' stroke-dasharray='1%25%2c 6%25' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
+  border-radius: 100px;
+}
+
+#challenge-10 .watch .content {
+  width: 130px;
+  height: 150px;
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+#challenge-10 .watch .content .time {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+#challenge-10 .watch .content .heart {
+  color: #f85b5b;
+  font-size: 0.9rem;
+  animation: beat 1s ease infinite;
+  -webkit-animation: beat 1s ease infinite;
+  transition: all 1s ease;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(1.2);
+  }
+}
+/*# sourceMappingURL=challenges1-10.css.map */

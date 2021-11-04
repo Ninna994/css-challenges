@@ -1,0 +1,368 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Courier+Prime:regular,italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  height: 50vh;
+  position: relative;
+  width: 100%;
+}
+
+/* ================
+UNCOMMENT WHEN FINISHED TO MAKE GRID
+==================*/
+.frame {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+#challenge-12 .frame {
+  background-color: #4cb6de;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+#challenge-12 .frame .text {
+  width: 320px;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+
+#challenge-12 .frame .text:before {
+  content: ",,";
+  font-size: 15rem;
+  position: absolute;
+  top: -220px;
+  left: -40px;
+  font-family: Arial, sans-serif;
+  letter-spacing: -30px;
+  opacity: 0.5;
+}
+
+#challenge-12 .frame .text .tooltip {
+  display: block;
+  width: 300px;
+  height: 120px;
+  position: absolute;
+  top: -60px;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0, -20px, 0);
+  -webkit-transform: translate3d(0, -20px, 0);
+  -moz-transform: translate3d(0, -20px, 0);
+  -ms-transform: translate3d(0, -20px, 0);
+  -o-transform: translate3d(0, -20px, 0);
+  background-color: #286f8a;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#challenge-12 .frame .text .tooltip:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #286f8a;
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 10px);
+}
+
+#challenge-12 .frame .text .tooltip .tooltip-header {
+  width: 100%;
+  padding-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #fff;
+  font-size: 0.9rem;
+  color: #286f8a;
+}
+
+#challenge-12 .frame .text .tooltip .tooltip-header i {
+  font-size: 1.2rem;
+  padding-left: 10px;
+  display: inline-block;
+  color: #286f8a;
+}
+
+#challenge-12 .frame .text .tooltip .tooltip-header i:hover {
+  opacity: 0.7;
+}
+
+#challenge-12 .frame .text .tooltip .text-desc {
+  font-size: 0.9rem;
+  padding: 5px;
+}
+
+#challenge-12 .frame .text .highlighted {
+  background-color: #286f8a;
+  padding: 3px;
+  cursor: pointer;
+}
+
+#challenge-12 .frame .text .highlighted:hover .tooltip,
+#challenge-12 .frame .text .highlighted:focus .tooltip {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  visibility: visible;
+}
+
+#challenge-12 .frame .author {
+  font-style: italic;
+  font-weight: 100;
+  margin-top: 10px;
+  padding-top: 20px;
+}
+
+#challenge-13 .center {
+  width: 100%;
+  height: 100%;
+}
+
+#challenge-13 .grid-container {
+  display: grid;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "first second" "third fourth";
+}
+
+#challenge-13 .grid-item {
+  position: relative;
+}
+
+#challenge-13 .grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#challenge-13 .grid-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+
+#challenge-13 .grid-item .overlay .plus {
+  width: 50px;
+  height: 50px;
+  background-color: #ec6565;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+  transition: all 0.7s ease;
+  cursor: pointer;
+}
+
+#challenge-13 .grid-item .overlay .plus:after {
+  content: "+";
+  font-size: 1.7rem;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+#challenge-13 .grid-item:hover .overlay {
+  opacity: 1;
+}
+
+#challenge-13 .grid-item:hover .overlay .plus {
+  animation: animate-plus 0.7s ease;
+  -webkit-animation: animate-plus 0.7s ease;
+}
+
+#challenge-13 .detail-item {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  background-color: #ec6565;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.7s ease;
+}
+
+#challenge-13 .detail-item .background-section {
+  width: 100%;
+  height: 50%;
+  background-image: url("https://100dayscss.com/codepen/13-1-header.jpg");
+  background-size: cover;
+}
+
+#challenge-13 .detail-item .background-section .x-button {
+  position: absolute;
+  top: 10px;
+  right: -50px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #ec6565;
+  cursor: pointer;
+  transition: all 0.7s ease;
+}
+
+#challenge-13 .detail-item .background-section .x-button:after {
+  content: "✕";
+  font-size: 1rem;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+#challenge-13 .detail-item .background-section .x-button:hover {
+  background-color: #fff;
+}
+
+#challenge-13 .detail-item .background-section .x-button:hover:after {
+  color: #ec6565;
+}
+
+#challenge-13 .detail-item .details-section {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  padding-top: 60px;
+  text-align: center;
+  transition: all 0.7s ease;
+}
+
+#challenge-13 .detail-item .details-section .profile-image {
+  position: absolute;
+  top: -500px;
+  left: calc(50% - 50px);
+  width: 100px;
+  height: 100px;
+  border: 2px solid #fff;
+  background-image: url("https://100dayscss.com/codepen/13-1.jpg");
+  background-size: cover;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all 0.7s ease;
+}
+
+#challenge-13 .detail-item .details-section p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+#challenge-13 .detail-item .details-section .social {
+  display: flex;
+  justify-content: center;
+  column-gap: 25px;
+  padding-top: 20px;
+}
+
+#challenge-13 .detail-item .details-section .social i {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+#challenge-13 .detail-item .details-section .social i:hover {
+  opacity: 0.7;
+}
+
+#challenge-13 .detail-item.active {
+  visibility: visible;
+  height: 100%;
+  opacity: 1;
+}
+
+#challenge-13 .detail-item.active .x-button {
+  right: 10px;
+}
+
+#challenge-13 .detail-item.active .profile-image {
+  top: -50px;
+}
+
+@keyframes animate-plus {
+  0% {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+/*# sourceMappingURL=challenges11-20.css.map */
