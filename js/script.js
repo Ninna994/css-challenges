@@ -27,3 +27,13 @@ $('.plus').on('click', function () {
 $('.x-button').on('click', function () {
     $('.detail-item').toggleClass('active')
 })
+
+// challenge 25
+
+$('.marker i').on('click', function () {
+    $('.card').toggleClass('active')
+})
+
+$('.dismiss').on('click', function () {
+    $('.card').toggleClass('active')
+})
