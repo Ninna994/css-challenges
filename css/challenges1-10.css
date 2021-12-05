@@ -906,8 +906,8 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-8 .small-ball-1 {
   position: absolute;
-  top: 13px;
-  left: 16px;
+  top: 33px;
+  left: 8px;
   width: 11px;
   height: 11px;
   border-radius: 50%;
@@ -915,11 +915,11 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  transform: rotate(16deg);
-  -webkit-transform: rotate(16deg);
-  -moz-transform: rotate(16deg);
-  -ms-transform: rotate(16deg);
-  -o-transform: rotate(16deg);
+  transform: rotate(273deg);
+  -webkit-transform: rotate(273deg);
+  -moz-transform: rotate(273deg);
+  -ms-transform: rotate(273deg);
+  -o-transform: rotate(273deg);
 }
 
 #challenge-8 .small-ball-1:after {
@@ -940,8 +940,8 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-8 .small-ball-2 {
   position: absolute;
-  top: 8px;
-  left: 27px;
+  top: 23px;
+  left: 42px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -949,11 +949,11 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  transform: rotate(208deg);
-  -webkit-transform: rotate(208deg);
-  -moz-transform: rotate(208deg);
-  -ms-transform: rotate(208deg);
-  -o-transform: rotate(208deg);
+  transform: rotate(204deg);
+  -webkit-transform: rotate(204deg);
+  -moz-transform: rotate(204deg);
+  -ms-transform: rotate(204deg);
+  -o-transform: rotate(204deg);
 }
 
 #challenge-8 .small-ball-2:after {
@@ -974,8 +974,8 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-8 .small-ball-3 {
   position: absolute;
-  top: 30px;
-  left: 52px;
+  top: 9px;
+  left: 50px;
   width: 13px;
   height: 13px;
   border-radius: 50%;
@@ -983,11 +983,11 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  transform: rotate(195deg);
-  -webkit-transform: rotate(195deg);
-  -moz-transform: rotate(195deg);
-  -ms-transform: rotate(195deg);
-  -o-transform: rotate(195deg);
+  transform: rotate(169deg);
+  -webkit-transform: rotate(169deg);
+  -moz-transform: rotate(169deg);
+  -ms-transform: rotate(169deg);
+  -o-transform: rotate(169deg);
 }
 
 #challenge-8 .small-ball-3:after {
@@ -1008,8 +1008,8 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-8 .small-ball-4 {
   position: absolute;
-  top: 52px;
-  left: 36px;
+  top: 12px;
+  left: 45px;
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -1017,11 +1017,11 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  transform: rotate(54deg);
-  -webkit-transform: rotate(54deg);
-  -moz-transform: rotate(54deg);
-  -ms-transform: rotate(54deg);
-  -o-transform: rotate(54deg);
+  transform: rotate(50deg);
+  -webkit-transform: rotate(50deg);
+  -moz-transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  -o-transform: rotate(50deg);
 }
 
 #challenge-8 .small-ball-4:after {
@@ -1042,8 +1042,8 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-8 .small-ball-5 {
   position: absolute;
-  top: 44px;
-  left: 17px;
+  top: 32px;
+  left: 12px;
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -1051,11 +1051,11 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  transform: rotate(132deg);
-  -webkit-transform: rotate(132deg);
-  -moz-transform: rotate(132deg);
-  -ms-transform: rotate(132deg);
-  -o-transform: rotate(132deg);
+  transform: rotate(203deg);
+  -webkit-transform: rotate(203deg);
+  -moz-transform: rotate(203deg);
+  -ms-transform: rotate(203deg);
+  -o-transform: rotate(203deg);
 }
 
 #challenge-8 .small-ball-5:after {
@@ -1076,8 +1076,8 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-8 .small-ball-6 {
   position: absolute;
-  top: 53px;
-  left: 8px;
+  top: 49px;
+  left: 7px;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -1085,11 +1085,11 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  transform: rotate(182deg);
-  -webkit-transform: rotate(182deg);
-  -moz-transform: rotate(182deg);
-  -ms-transform: rotate(182deg);
-  -o-transform: rotate(182deg);
+  transform: rotate(76deg);
+  -webkit-transform: rotate(76deg);
+  -moz-transform: rotate(76deg);
+  -ms-transform: rotate(76deg);
+  -o-transform: rotate(76deg);
 }
 
 #challenge-8 .small-ball-6:after {
@@ -1110,8 +1110,8 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-8 .small-ball-7 {
   position: absolute;
-  top: 24px;
-  left: 37px;
+  top: 30px;
+  left: 44px;
   width: 17px;
   height: 17px;
   border-radius: 50%;
@@ -1119,11 +1119,11 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  transform: rotate(204deg);
-  -webkit-transform: rotate(204deg);
-  -moz-transform: rotate(204deg);
-  -ms-transform: rotate(204deg);
-  -o-transform: rotate(204deg);
+  transform: rotate(243deg);
+  -webkit-transform: rotate(243deg);
+  -moz-transform: rotate(243deg);
+  -ms-transform: rotate(243deg);
+  -o-transform: rotate(243deg);
 }
 
 #challenge-8 .small-ball-7:after {
@@ -1144,8 +1144,8 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-8 .small-ball-8 {
   position: absolute;
-  top: 28px;
-  left: 19px;
+  top: 53px;
+  left: 52px;
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -1153,11 +1153,11 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  transform: rotate(31deg);
-  -webkit-transform: rotate(31deg);
-  -moz-transform: rotate(31deg);
-  -ms-transform: rotate(31deg);
-  -o-transform: rotate(31deg);
+  transform: rotate(131deg);
+  -webkit-transform: rotate(131deg);
+  -moz-transform: rotate(131deg);
+  -ms-transform: rotate(131deg);
+  -o-transform: rotate(131deg);
 }
 
 #challenge-8 .small-ball-8:after {
@@ -1178,8 +1178,8 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-8 .small-ball-9 {
   position: absolute;
-  top: 19px;
-  left: 56px;
+  top: 32px;
+  left: 45px;
   width: 19px;
   height: 19px;
   border-radius: 50%;
@@ -1187,11 +1187,11 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  transform: rotate(117deg);
-  -webkit-transform: rotate(117deg);
-  -moz-transform: rotate(117deg);
-  -ms-transform: rotate(117deg);
-  -o-transform: rotate(117deg);
+  transform: rotate(168deg);
+  -webkit-transform: rotate(168deg);
+  -moz-transform: rotate(168deg);
+  -ms-transform: rotate(168deg);
+  -o-transform: rotate(168deg);
 }
 
 #challenge-8 .small-ball-9:after {
@@ -1212,8 +1212,8 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-8 .small-ball-10 {
   position: absolute;
-  top: 14px;
-  left: 49px;
+  top: 30px;
+  left: 29px;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -1221,11 +1221,11 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  transform: rotate(86deg);
-  -webkit-transform: rotate(86deg);
-  -moz-transform: rotate(86deg);
-  -ms-transform: rotate(86deg);
-  -o-transform: rotate(86deg);
+  transform: rotate(57deg);
+  -webkit-transform: rotate(57deg);
+  -moz-transform: rotate(57deg);
+  -ms-transform: rotate(57deg);
+  -o-transform: rotate(57deg);
 }
 
 #challenge-8 .small-ball-10:after {
@@ -1246,8 +1246,8 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-8 .medium-ball-1 {
   position: absolute;
-  top: 10px;
-  left: 5px;
+  top: 53px;
+  left: 9px;
   width: 51px;
   height: 51px;
   border-radius: 50%;
@@ -1255,11 +1255,11 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  transform: rotate(219deg);
-  -webkit-transform: rotate(219deg);
-  -moz-transform: rotate(219deg);
-  -ms-transform: rotate(219deg);
-  -o-transform: rotate(219deg);
+  transform: rotate(119deg);
+  -webkit-transform: rotate(119deg);
+  -moz-transform: rotate(119deg);
+  -ms-transform: rotate(119deg);
+  -o-transform: rotate(119deg);
 }
 
 #challenge-8 .medium-ball-1:after {
@@ -1280,8 +1280,8 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-8 .medium-ball-2 {
   position: absolute;
-  top: 8px;
-  left: 53px;
+  top: 4px;
+  left: 61px;
   width: 52px;
   height: 52px;
   border-radius: 50%;
@@ -1289,11 +1289,11 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  transform: rotate(16deg);
-  -webkit-transform: rotate(16deg);
-  -moz-transform: rotate(16deg);
-  -ms-transform: rotate(16deg);
-  -o-transform: rotate(16deg);
+  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
 }
 
 #challenge-8 .medium-ball-2:after {
@@ -1314,8 +1314,8 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-8 .medium-ball-3 {
   position: absolute;
-  top: 26px;
-  left: 59px;
+  top: 63px;
+  left: 63px;
   width: 53px;
   height: 53px;
   border-radius: 50%;
@@ -1323,11 +1323,11 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  transform: rotate(111deg);
-  -webkit-transform: rotate(111deg);
-  -moz-transform: rotate(111deg);
-  -ms-transform: rotate(111deg);
-  -o-transform: rotate(111deg);
+  transform: rotate(254deg);
+  -webkit-transform: rotate(254deg);
+  -moz-transform: rotate(254deg);
+  -ms-transform: rotate(254deg);
+  -o-transform: rotate(254deg);
 }
 
 #challenge-8 .medium-ball-3:after {
@@ -1348,8 +1348,8 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-8 .medium-ball-4 {
   position: absolute;
-  top: 36px;
-  left: 48px;
+  top: 19px;
+  left: 52px;
   width: 54px;
   height: 54px;
   border-radius: 50%;
@@ -1357,11 +1357,11 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  transform: rotate(51deg);
-  -webkit-transform: rotate(51deg);
-  -moz-transform: rotate(51deg);
-  -ms-transform: rotate(51deg);
-  -o-transform: rotate(51deg);
+  transform: rotate(19deg);
+  -webkit-transform: rotate(19deg);
+  -moz-transform: rotate(19deg);
+  -ms-transform: rotate(19deg);
+  -o-transform: rotate(19deg);
 }
 
 #challenge-8 .medium-ball-4:after {
@@ -1382,8 +1382,8 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-8 .medium-ball-5 {
   position: absolute;
-  top: 22px;
-  left: 14px;
+  top: 10px;
+  left: 26px;
   width: 55px;
   height: 55px;
   border-radius: 50%;
@@ -1391,11 +1391,11 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  transform: rotate(279deg);
-  -webkit-transform: rotate(279deg);
-  -moz-transform: rotate(279deg);
-  -ms-transform: rotate(279deg);
-  -o-transform: rotate(279deg);
+  transform: rotate(238deg);
+  -webkit-transform: rotate(238deg);
+  -moz-transform: rotate(238deg);
+  -ms-transform: rotate(238deg);
+  -o-transform: rotate(238deg);
 }
 
 #challenge-8 .medium-ball-5:after {
@@ -1575,7 +1575,7 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-9 .scene .rain-small-1 {
   position: absolute;
-  left: 132px;
+  left: 66px;
   bottom: 0;
   width: 5px;
   height: 5px;
@@ -1586,13 +1586,13 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   background-color: lightblue;
   animation: fall linear 1s infinite;
   -webkit-animation: fall linear 1s infinite;
-  animation-duration: 1.25s;
+  animation-duration: 2.25s;
   animation-fill-mode: both;
 }
 
 #challenge-9 .scene .rain-big-1 {
   position: absolute;
-  left: 113px;
+  left: 69px;
   bottom: 0;
   width: 10px;
   height: 10px;
@@ -1610,7 +1610,7 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-9 .scene .rain-small-2 {
   position: absolute;
-  left: 241px;
+  left: 58px;
   bottom: 0;
   width: 5px;
   height: 5px;
@@ -1627,7 +1627,7 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-9 .scene .rain-big-2 {
   position: absolute;
-  left: 319px;
+  left: 327px;
   bottom: 0;
   width: 10px;
   height: 10px;
@@ -1645,7 +1645,7 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-9 .scene .rain-small-3 {
   position: absolute;
-  left: 39px;
+  left: 41px;
   bottom: 0;
   width: 5px;
   height: 5px;
@@ -1662,7 +1662,7 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-9 .scene .rain-big-3 {
   position: absolute;
-  left: 277px;
+  left: 132px;
   bottom: 0;
   width: 10px;
   height: 10px;
@@ -1673,14 +1673,14 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   background-color: lightblue;
   animation: fall linear infinite;
   -webkit-animation: fall linear infinite;
-  animation-duration: 2.75s;
+  animation-duration: 1.75s;
   animation-delay: 0.5s;
   animation-fill-mode: both;
 }
 
 #challenge-9 .scene .rain-small-4 {
   position: absolute;
-  left: 107px;
+  left: 244px;
   bottom: 0;
   width: 5px;
   height: 5px;
@@ -1691,13 +1691,13 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   background-color: lightblue;
   animation: fall linear 1s infinite;
   -webkit-animation: fall linear 1s infinite;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-fill-mode: both;
 }
 
 #challenge-9 .scene .rain-big-4 {
   position: absolute;
-  left: 245px;
+  left: 85px;
   bottom: 0;
   width: 10px;
   height: 10px;
@@ -1708,14 +1708,14 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   background-color: lightblue;
   animation: fall linear infinite;
   -webkit-animation: fall linear infinite;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-delay: 0.5s;
   animation-fill-mode: both;
 }
 
 #challenge-9 .scene .rain-small-5 {
   position: absolute;
-  left: 158px;
+  left: 62px;
   bottom: 0;
   width: 5px;
   height: 5px;
@@ -1732,7 +1732,7 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-9 .scene .rain-big-5 {
   position: absolute;
-  left: 199px;
+  left: 348px;
   bottom: 0;
   width: 10px;
   height: 10px;
@@ -1750,7 +1750,7 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-9 .scene .rain-small-6 {
   position: absolute;
-  left: 293px;
+  left: 73px;
   bottom: 0;
   width: 5px;
   height: 5px;
@@ -1761,13 +1761,13 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   background-color: lightblue;
   animation: fall linear 1s infinite;
   -webkit-animation: fall linear 1s infinite;
-  animation-duration: 3.5s;
+  animation-duration: 2.5s;
   animation-fill-mode: both;
 }
 
 #challenge-9 .scene .rain-big-6 {
   position: absolute;
-  left: 277px;
+  left: 89px;
   bottom: 0;
   width: 10px;
   height: 10px;
@@ -1785,7 +1785,7 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-9 .scene .rain-small-7 {
   position: absolute;
-  left: 229px;
+  left: 264px;
   bottom: 0;
   width: 5px;
   height: 5px;
@@ -1802,7 +1802,7 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-9 .scene .rain-big-7 {
   position: absolute;
-  left: 267px;
+  left: 292px;
   bottom: 0;
   width: 10px;
   height: 10px;
@@ -1813,14 +1813,14 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   background-color: lightblue;
   animation: fall linear infinite;
   -webkit-animation: fall linear infinite;
-  animation-duration: 2.75s;
+  animation-duration: 4.75s;
   animation-delay: 0.5s;
   animation-fill-mode: both;
 }
 
 #challenge-9 .scene .rain-small-8 {
   position: absolute;
-  left: 220px;
+  left: 111px;
   bottom: 0;
   width: 5px;
   height: 5px;
@@ -1837,7 +1837,7 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-9 .scene .rain-big-8 {
   position: absolute;
-  left: 60px;
+  left: 244px;
   bottom: 0;
   width: 10px;
   height: 10px;
@@ -1855,7 +1855,7 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-9 .scene .rain-small-9 {
   position: absolute;
-  left: 235px;
+  left: 344px;
   bottom: 0;
   width: 5px;
   height: 5px;
@@ -1866,13 +1866,13 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   background-color: lightblue;
   animation: fall linear 1s infinite;
   -webkit-animation: fall linear 1s infinite;
-  animation-duration: 3.25s;
+  animation-duration: 4.25s;
   animation-fill-mode: both;
 }
 
 #challenge-9 .scene .rain-big-9 {
   position: absolute;
-  left: 255px;
+  left: 345px;
   bottom: 0;
   width: 10px;
   height: 10px;
@@ -1883,14 +1883,14 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   background-color: lightblue;
   animation: fall linear infinite;
   -webkit-animation: fall linear infinite;
-  animation-duration: 3.25s;
+  animation-duration: 5.25s;
   animation-delay: 0.5s;
   animation-fill-mode: both;
 }
 
 #challenge-9 .scene .rain-small-10 {
   position: absolute;
-  left: 278px;
+  left: 137px;
   bottom: 0;
   width: 5px;
   height: 5px;
@@ -1907,7 +1907,7 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-9 .scene .rain-big-10 {
   position: absolute;
-  left: 330px;
+  left: 309px;
   bottom: 0;
   width: 10px;
   height: 10px;
@@ -1918,14 +1918,14 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   background-color: lightblue;
   animation: fall linear infinite;
   -webkit-animation: fall linear infinite;
-  animation-duration: 3.5s;
+  animation-duration: 5.5s;
   animation-delay: 0.5s;
   animation-fill-mode: both;
 }
 
 #challenge-9 .scene .rain-small-11 {
   position: absolute;
-  left: 302px;
+  left: 68px;
   bottom: 0;
   width: 5px;
   height: 5px;
@@ -1942,7 +1942,7 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-9 .scene .rain-big-11 {
   position: absolute;
-  left: 23px;
+  left: 323px;
   bottom: 0;
   width: 10px;
   height: 10px;
@@ -1953,14 +1953,14 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   background-color: lightblue;
   animation: fall linear infinite;
   -webkit-animation: fall linear infinite;
-  animation-duration: 3.75s;
+  animation-duration: 5.75s;
   animation-delay: 0.5s;
   animation-fill-mode: both;
 }
 
 #challenge-9 .scene .rain-small-12 {
   position: absolute;
-  left: 40px;
+  left: 300px;
   bottom: 0;
   width: 5px;
   height: 5px;
@@ -1971,13 +1971,13 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   background-color: lightblue;
   animation: fall linear 1s infinite;
   -webkit-animation: fall linear 1s infinite;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-fill-mode: both;
 }
 
 #challenge-9 .scene .rain-big-12 {
   position: absolute;
-  left: 116px;
+  left: 305px;
   bottom: 0;
   width: 10px;
   height: 10px;
@@ -1988,14 +1988,14 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   background-color: lightblue;
   animation: fall linear infinite;
   -webkit-animation: fall linear infinite;
-  animation-duration: 6s;
+  animation-duration: 5s;
   animation-delay: 0.5s;
   animation-fill-mode: both;
 }
 
 #challenge-9 .scene .rain-small-13 {
   position: absolute;
-  left: 122px;
+  left: 299px;
   bottom: 0;
   width: 5px;
   height: 5px;
@@ -2012,7 +2012,7 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-9 .scene .rain-big-13 {
   position: absolute;
-  left: 154px;
+  left: 69px;
   bottom: 0;
   width: 10px;
   height: 10px;
@@ -2023,14 +2023,14 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   background-color: lightblue;
   animation: fall linear infinite;
   -webkit-animation: fall linear infinite;
-  animation-duration: 6.25s;
+  animation-duration: 4.25s;
   animation-delay: 0.5s;
   animation-fill-mode: both;
 }
 
 #challenge-9 .scene .rain-small-14 {
   position: absolute;
-  left: 157px;
+  left: 66px;
   bottom: 0;
   width: 5px;
   height: 5px;
@@ -2047,7 +2047,7 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 
 #challenge-9 .scene .rain-big-14 {
   position: absolute;
-  left: 152px;
+  left: 126px;
   bottom: 0;
   width: 10px;
   height: 10px;
@@ -2058,7 +2058,7 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
   background-color: lightblue;
   animation: fall linear infinite;
   -webkit-animation: fall linear infinite;
-  animation-duration: 5.5s;
+  animation-duration: 6.5s;
   animation-delay: 0.5s;
   animation-fill-mode: both;
 }

@@ -165,6 +165,7 @@ UNCOMMENT WHEN FINISHED TO MAKE GRID
 #challenge-25 .interactive-container .card .card-footer span {
   text-decoration: none;
   color: #1b7ac7;
+  cursor: pointer;
 }
 
 #challenge-25 .interactive-container .card .card-footer a:hover,
